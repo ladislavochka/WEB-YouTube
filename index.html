@@ -1,35 +1,154 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toco-Toco | Головна</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="navbar">
-        <div class="logo">Toco-Toco</div>
-        <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav-menu">
-            <a href="index.html">Головна</a>
-            <a href="menu.html">Тукани</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="booking.html">Замовленя</a>
-        </nav>
-    </header>
-    <div class="hero">
-            <h1>Тропічна екзотика у вашому домі</h1>
-            <p>Подаруйте собі частинку дикої природи Амазонії, яка вражає з першого погляду.</p>
-            <a href="booking.html" class="btn">Замовити тукана</a>
-        </div>
 
- 
-    <footer>
-        <p>&copy; 2026 Toco-Toco</p>
-    </footer>
+<header class="header">
+  <a href="index.html" class="logo"><span>▶</span> YouTube</a>
+  <form class="search-form" onsubmit="return false">
+    <input type="text" placeholder="Search" class="search-input" />
+    <button class="search-btn">🔍</button>
+  </form>
+  <button class="signin-btn">👤 Sign in</button>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <a href="index.html" class="nav-item active">🏠 Home</a>
+    <a href="#" class="nav-item">🔥 Trending</a>
+    <a href="#" class="nav-item">📋 Subscriptions</a>
+    <a href="#" class="nav-item">📚 Library</a>
+    <hr>
+    <p class="sidebar-title">Subscriptions</p>
+    <a href="channel1.html" class="sub-item">
+      <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40&h=40&fit=crop" alt="Traversy Media">
+      Traversy Media
+    </a>
+    <a href="channel2.html" class="sub-item">
+      <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=40&h=40&fit=crop" alt="Kevin Powell">
+      Kevin Powell
+    </a>
+    <a href="channel3.html" class="sub-item">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="Fireship">
+      Fireship
+    </a>
+    <a href="channel4.html" class="sub-item">
+      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop" alt="Web Dev Simplified">
+      Web Dev Simplified
+    </a>
+  </aside>
+
+  <main class="main">
+
+    <div class="chips">
+      <button class="chip active">All</button>
+      <button class="chip">JavaScript</button>
+      <button class="chip">React</button>
+      <button class="chip">Python</button>
+      <button class="chip">CSS</button>
+    </div>
+
+    <div class="video-grid">
+
+      <a href="video1.html" class="video-card">
+        <div class="thumb-wrap">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=480&h=270&fit=crop" alt="React Tutorial">
+          <span class="duration">1:22:47</span>
+        </div>
+        <div class="card-info">
+          <a href="channel1.html"><img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40&h=40&fit=crop" alt="Traversy Media"></a>
+          <div>
+            <p class="video-title">Building a Full-Stack App with React & Node.js</p>
+            <a href="channel1.html" class="channel-name">Traversy Media</a>
+            <p class="meta">1.4M views • 2 days ago</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="video2.html" class="video-card">
+        <div class="thumb-wrap">
+          <img src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?w=480&h=270&fit=crop" alt="CSS Grid">
+          <span class="duration">2:10:05</span>
+        </div>
+        <div class="card-info">
+          <a href="channel2.html"><img class="avatar" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=40&h=40&fit=crop" alt="Kevin Powell"></a>
+          <div>
+            <p class="video-title">CSS Grid & Flexbox for Beginners — Full Course</p>
+            <a href="channel2.html" class="channel-name">Kevin Powell</a>
+            <p class="meta">870K views • 5 days ago</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="video3.html" class="video-card">
+        <div class="thumb-wrap">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=480&h=270&fit=crop" alt="JavaScript">
+          <span class="duration">10:42</span>
+        </div>
+        <div class="card-info">
+          <a href="channel3.html"><img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="Fireship"></a>
+          <div>
+            <p class="video-title">Every JavaScript Framework Explained in 10 Minutes</p>
+            <a href="channel3.html" class="channel-name">Fireship</a>
+            <p class="meta">3.1M views • 1 week ago</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="video4.html" class="video-card">
+        <div class="thumb-wrap">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=480&h=270&fit=crop" alt="Python">
+          <span class="duration">48:19</span>
+        </div>
+        <div class="card-info">
+          <a href="channel4.html"><img class="avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop" alt="Web Dev Simplified"></a>
+          <div>
+            <p class="video-title">Python for Data Science — NumPy, Pandas & Matplotlib</p>
+            <a href="channel4.html" class="channel-name">Web Dev Simplified</a>
+            <p class="meta">542K views • 3 days ago</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="video5.html" class="video-card">
+        <div class="thumb-wrap">
+          <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=480&h=270&fit=crop" alt="React Query">
+          <span class="duration">55:31</span>
+        </div>
+        <div class="card-info">
+          <a href="channel1.html"><img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40&h=40&fit=crop" alt="Traversy Media"></a>
+          <div>
+            <p class="video-title">React Query v5 — Everything You Need to Know</p>
+            <a href="channel1.html" class="channel-name">Traversy Media</a>
+            <p class="meta">298K views • 4 days ago</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="video6.html" class="video-card">
+        <div class="thumb-wrap">
+          <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=480&h=270&fit=crop" alt="Async JS">
+          <span class="duration">11:17</span>
+        </div>
+        <div class="card-info">
+          <a href="channel3.html"><img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="Fireship"></a>
+          <div>
+            <p class="video-title">JavaScript Promises, Async/Await & Event Loop Visualized</p>
+            <a href="channel3.html" class="channel-name">Fireship</a>
+            <p class="meta">2.8M views • 1 month ago</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+</div>
+
 </body>
 </html>
